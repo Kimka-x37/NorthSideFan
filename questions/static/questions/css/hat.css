@@ -1,0 +1,111 @@
+body {
+    background-color: black;
+    margin: 0%;
+    padding: 0%;
+}
+p{
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    
+
+    background-color: rgb(175, 0, 0);
+    border-bottom: 2px white solid;
+    text-align: center;
+    padding: 5px;
+}
+
+.nav-btn {
+    color: black;
+    background-color: lightgray;
+    border: 3px black solid;
+    border-radius: 5px;
+
+    font-family: Georgia, serif;
+    font-size: 1.5vw;
+    text-align: center;
+
+    display: inline-flex;
+    
+    width: 10%;
+    height: 200%;
+
+    padding: 2%;
+
+    transition-duration: 1s;
+}
+.nav-btn img{
+    height: fit-content;
+}
+.nav-btn:hover{
+    background-color: black;
+    color: white;
+    border-color: white;
+    scale: 1.05;
+}
+header p{
+    width: 10%;
+    height: 1;
+
+    font-size: 1.25vw;
+}
+header p a{
+    color: #ff6262;
+}
+
+.nordlogo {
+    width: 35vw;
+
+    transition-duration: 1s;
+}
+.logo {
+    width: 1.5vw;
+    height: auto;
+}
+.discord {
+    width: 6vw;
+
+    transition-duration: 1s;
+}
+.discord:hover{
+    scale: 1.05;
+}
+
+article {
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1%;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(41, 0, 117)
+}
+footer{
+    margin-right: 1%;
+    float: right;
+    color: gray;
+}
+.admin_list_panel{
+    background-color: rgb(175, 0, 0);
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 15px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.50vw;
+
+    justify-self: center;
+    width: 25%;
+
+    padding: 1%;
+    margin-top: 2%;
+}

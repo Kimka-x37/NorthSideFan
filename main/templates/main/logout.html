@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Вийти?</title>
+    <link rel="stylesheet" href="{% static "main/css/register.css" %}">
+</head>
+<body>
+    <main>
+        <header>Вийти?</header>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit">Вийти</button>
+            <a href="{% url 'main'%}">Нi</a>
+        </form>
+    </main>
+</body>
+</html>

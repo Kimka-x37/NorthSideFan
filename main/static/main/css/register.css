@@ -1,0 +1,94 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    margin: auto;
+
+    width: 20%;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+header{
+    border: 1px solid white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 2vw;
+
+    padding: 4%;
+
+    color: white;
+
+    background-color: #1E3A5F;
+}
+main form{
+    padding: 4%;
+
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #004297;
+
+    border: 1px solid white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+main form p{
+    font-size: 2vw;
+    color:white;
+}
+.input{
+    font-size: 1.50vw;
+    border-radius: 7.5px;
+    padding: 1%;
+
+    margin: 1%;
+}
+main form button{
+    font-size: 1.50vw;
+    padding: 1%;
+    
+    align-self: center;
+
+    border: 1px solid white;
+    border-radius: 10px;
+
+    transition-duration: 1s;
+}
+
+main form button:hover{
+    background-color: black;
+    color: white;
+    border-color: white;
+    scale: 1.05;
+}
+.error{
+    color: rgb(255, 39, 39);
+    font-size: x-large;
+    text-align: center;
+}
+main form a{
+    text-decoration: none;
+
+    margin-top: 1%;
+
+    color: #ffffff;
+    font-size: x-large;
+    text-align: center;
+
+    transition-duration: 1s;
+}
+main form a:hover{
+    color: #a4a4a4;
+    scale: 1.05;
+}

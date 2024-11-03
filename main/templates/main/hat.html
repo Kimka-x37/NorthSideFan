@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/hat.css' %}">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <header>
+        
+        <a class="nav-btn" href="{% url 'admins' %}"><img class="logo" src="{% static 'main/images/shield.svg' %}">Адміністрація</a>
+        <a class="nav-btn"><b>?</b> Питання</a>
+        {% if user.is_authenticated  %}
+            <p>
+                {{ username }}
+                <a href={% url 'logout' %}>Вихід з облікового запису</a>
+            </p>
+        {% else %}
+            <a class="nav-btn" href="{% url 'register' %}">Авторизация</a>
+        {% endif %}
+        
+        <a href="https://discord.gg/ZZUKxzFK8r">
+            <img class="discord" src="{% static 'main/images/discord.svg' %}">
+        </a>
+        <a href="{% url 'main' %}">
+            <img class="nordlogo" src="{% static 'main/images/nordlogo.svg' %}">
+        </a>
+    </header>
+    {% block main %}{% endblock main %}
+    <footer>by kimka777 and popka_griba</footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Зареєструватися</title>
+    <link rel="stylesheet" href="{% static "main/css/register.css" %}">
+</head>
+<body>
+    <main>
+        <header>Зареєструватися</header>
+        <form method="post">
+            {% csrf_token %}
+            <p>Логiн</p>
+            {{ form.username }}<br>
+            <p>Пароль</p>
+            {{ form.password1 }}<br>
+            <p>Повторiть пароль</p>
+            {{ form.password2 }}<br>
+            <button type="submit">Зареєструватися</button>
+            <a href="{% url 'login'%}">У вас вже є аккаунт?</a>
+            <p class='error'>{{error}}</p>
+        </form>
+    </main>
+</body>
+</html>

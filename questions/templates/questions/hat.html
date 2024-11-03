@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'questions/css/hat.css' %}">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <header>
+        
+        <a class="nav-btn">Задати питання</a>
+        <a class="nav-btn">Мої запитання</a>
+        <a class="nav-btn">Мої відповіді</a>
+        <a class="nav-btn">Мої подобайки</a>
+        <p>
+            {{ username }}
+            <a href={% url 'logout' %}>Вихід з облікового запису</a>
+        </p>
+
+        <a href="https://discord.gg/ZZUKxzFK8r">
+            <img class="discord" src="{% static 'main/images/discord.svg' %}">
+        </a>
+        <a href="{% url 'main' %}">
+            <img class="nordlogo" src="{% static 'main/images/nordlogo.svg' %}">
+        </a>
+    </header>
+    {% block main %}{% endblock main %}
+</body>
+</html>

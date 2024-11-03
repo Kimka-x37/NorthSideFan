@@ -4,4 +4,4 @@ from django.contrib.auth.decorators import login_required
 
 @login_required(login_url='register')
 def feed(request):
-    return render(request, 'questions/hat.html', {'username':request.user.username})
+    return render(request, 'questions/feed.html', {'username':request.user.username})

@@ -24,15 +24,14 @@ header {
     border-radius: 5px;
 
     font-family: Georgia, serif;
-    font-size: 1.5vw;
+    font-size: 1vw;
     text-align: center;
 
     display: inline-flex;
     
-    width: 10%;
-    height: 200%;
+    width: 5%;
 
-    padding: 2%;
+    padding: 1%;
 
     transition-duration: 1s;
 }
@@ -65,7 +64,7 @@ header p a{
     height: auto;
 }
 .discord {
-    width: 6vw;
+    width: 5.25vw;
 
     transition-duration: 1s;
 }
